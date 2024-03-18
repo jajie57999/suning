@@ -63,7 +63,7 @@
       } else {
         entId = +entId;
       }
-      _MEIQIA('entId', 'b811cab594ebd250e9722a034fc27065' || entId);
+      _MEIQIA('entId', 'bc872db55575a28546e09b791a6e92f7' || entId);
       _MEIQIA('standalone', function (config) {
         if (config.color) {
           document.body.style['background-color'] = '#' + config.color;
@@ -81,12 +81,6 @@
           _MEIQIA('metadata', metadata);
         } catch (e) { }
       }
-      if (data.encryptedmetadata) {
-        _MEIQIA('encryptedmetadata', data.encryptedmetadata);
-      }
-      if (data.requestperms) {
-        localStorage.setItem('requestperms', data.requestperms);
-      }
       if (data.language) {
         if (data.languagelocal !== 'true') {
           _MEIQIA('language', data.language);
@@ -101,10 +95,6 @@
       if (data.fallback) {
         _MEIQIA('fallback', +data.fallback);
       }
-      if (data.socketprotocol) {
-        _MEIQIA('socketProtocol', data.socketprotocol);
-      }
-      _MEIQIA('handleParams', data);
       if (data.clientid) {
         _MEIQIA('clientId', data.clientid);
       }
